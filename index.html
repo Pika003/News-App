@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-nav">
+        <a href="#" onclick="reload()" class="company-logo">
+            <img src="logo.png" width="100px" alt="main-logo">
+        </a>
+        <div class="nav-links">
+            <ul>
+                <li class="hover-link nav-item" id="IPL" onclick="onNavItemClick('IPL')">IPL</li>
+                <li class="hover-link nav-item" id="Finance" onclick="onNavItemClick('Finance')">Finance</li>
+                <li class="hover-link nav-item" id="Politics" onclick="onNavItemClick('Politics')">Politics</li>
+            </ul>
+        </div>
+        <div class="search-bar">
+            <input id="search-text" type="text" class="news-input" placeholder=" Search ... ">
+            <button id="search-button" class="search-button">Search</button>
+        </div>
+    </div>
+
+    <main>
+        <div class="cards-container" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">Some thing happing...</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </template>
+    
+    <script src="script.js"></script>
+</body>
+</html>

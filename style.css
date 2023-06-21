@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto","Poppins",sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.main-nav{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(91, 167, 234);
+    padding: 0 50px;
+    height: 80px;
+    width: 100vw;
+}
+.nav-links ul{
+    display: flex;
+    align-items: center;
+}
+.nav-links ul li{
+    padding-left: 50px;
+}
+.nav-item.active{
+    color: rgb(255, 255, 255);
+}
+.news-input{
+    width: 200px;
+    height: 30px;
+    padding-inline: 12px;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+}
+.search-button{
+    background-color: rgba(8, 8, 130, 0.858);
+    color: #ffffff;
+    padding: 8px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.search-button:hover{
+    background-color: #ffffff;
+    color: rgba(8, 8, 130, 0.858);
+    border: 2px solid;
+}
+main{
+    padding: 120px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    row-gap: 20px;
+    align-items: start;
+}
+.card{
+    width: 360px;
+    min-height: 400px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 4px #d4ecff;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: all 0.3 ease;
+}
+.card:hover{
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+.card-header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 20px;
+}
+.news-source{
+    margin-block: 20px;
+}
+#cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 880px) {
+    .nav-links ul li{
+        padding-left: 15px;
+    }
+    .main-nav{
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .nav-links{
+        display: none;
+    }
+    .cards-container{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .nav-links{
+        display: none;
+    }
+    .main-nav{
+        flex-direction: column;
+        height: 150px;
+    }
+    img{
+        width: 130px;
+        position: relative;
+        top: -10px;
+    }
+    .search-bar{
+        position: relative;
+        top: -30px;
+    }
+}
+@media screen and (max-width: 360px) {
+    img{
+        width: 100px;
+        top: -10px;
+    }
+    #search-text{
+        width: 120px;
+        height: 30px;
+    }
+    #search-button{
+        height: 30px;
+    }
+}
