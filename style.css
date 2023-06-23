@@ -56,10 +56,8 @@ ul{
     border: 2px solid;
 }
 main{
-    padding: 120px 15px;
+    padding: 130px;
     margin-top: 20px;
-    margin-bottom: 20px;
-    row-gap: 20px;
     align-items: start;
 }
 .card{
@@ -127,6 +125,10 @@ main{
         position: relative;
         top: -30px;
     }
+    main{
+        padding: 37px;
+        margin-top: 113px;
+    }
 }
 @media screen and (max-width: 360px) {
     img{
@@ -139,5 +141,9 @@ main{
     }
     #search-button{
         height: 30px;
+    }
+    main{
+        padding: 37px;
+        margin-top: 113px;
     }
 }
