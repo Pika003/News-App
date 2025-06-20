@@ -12,7 +12,7 @@ This is a simple news web-app, using HTML, CSS, Js & API.
 - Cool UI
 
 
-<a href='https://www.linkpicture.com/view.php?img=LPic64b95bc2144341210674803'><img align="left" src='https://www.linkpicture.com/q/Screenshot-11_4.png' type='image'></a>
+[![Screenshot-2025-06-20-154800.png](https://i.postimg.cc/9FpGTCFt/Screenshot-2025-06-20-154800.png)](https://postimg.cc/WhdFcRZh)
 
 ## Optimizations
 
